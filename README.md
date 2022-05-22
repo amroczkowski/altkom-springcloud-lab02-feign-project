@@ -1,0 +1,1 @@
+# altkom-springcloud-lab02-feign-project
