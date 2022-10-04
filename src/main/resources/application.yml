@@ -10,7 +10,7 @@ pl:
       url: http://localhost:8100
 logging:
   level:
-    pl.altkom.springcloud.lab02:.feign.projectservice.client: DEBUG
+    pl.altkom.springcloud.lab02.feign.projectservice.client: DEBUG
 feign:
   client:
     config:
