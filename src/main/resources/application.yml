@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: project-service
+  jpa:
+    open-in-view: false
 
 pl:
   altkom:
