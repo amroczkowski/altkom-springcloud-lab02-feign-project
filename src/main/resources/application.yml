@@ -5,6 +5,14 @@ spring:
     name: project-service
   jpa:
     open-in-view: false
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            loggerLevel: full
+            requestInterceptors:
+              - pl.altkom.springcloud.lab02.feign.projectservice.client.interceptor.RequestHeaderCustomizerInterceptor
 
 pl:
   altkom:
@@ -13,10 +21,3 @@ pl:
 logging:
   level:
     pl.altkom.springcloud.lab02.feign.projectservice.client: DEBUG
-feign:
-  client:
-    config:
-      default:
-        loggerLevel: full
-        requestInterceptors:
-          - pl.altkom.springcloud.lab02.feign.projectservice.client.interceptor.RequestHeaderCustomizerInterceptor
